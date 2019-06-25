@@ -37,7 +37,7 @@ func (_m *PostStore) AnalyticsPostCount(teamId string, mustHaveFile bool, mustHa
 }
 
 // AnalyticsPostCountsByDay provides a mock function with given fields: teamId
-func (_m *PostStore) AnalyticsPostCountsByDay(teamId string) (model.AnalyticsRows, *model.AppError) {
+func (_m *PostStore) AnalyticsPostCountsByDay(teamId string, botsOnly bool) (model.AnalyticsRows, *model.AppError) {
 	ret := _m.Called(teamId)
 
 	var r0 model.AnalyticsRows
